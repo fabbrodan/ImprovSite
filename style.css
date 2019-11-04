@@ -1,0 +1,36 @@
+body {
+    font-family: calibri;
+    height: 100%;
+}
+
+#mainHeaderDiv {
+    text-align: center;
+    top:25px;
+    position: sticky;
+}
+
+#headerMenu li {
+    display: inline;
+    padding-right: 15px;
+}
+
+#headerMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#headerMenu li :hover {
+    font-weight: bold;
+}
+
+.mainContent {
+    border-style:solid;
+    border-width:1px;
+    height: 80%;
+    width: auto;
+}
+
+#footer {
+    bottom: 25px;
+    position: absolute;
+}
