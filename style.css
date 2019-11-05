@@ -31,8 +31,8 @@ ul
     color: white;
 }
 
-#headerMenu li :hover {
-    font-weight: bold;
+#headerMenu li a :hover {
+    font-weight: bolder;
 }
 
 .mainContent {
@@ -90,9 +90,13 @@ ul
     transition: left 10s;
 }
 
-/*.HOchO:hover {
+.HOchO:hover {
     left: 500px;
-}*/
+}
+
+.selected {
+    font-weight: bolder;
+}
 
 #footer {
     bottom: 25px;
