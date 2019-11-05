@@ -3,10 +3,14 @@ $("document").ready(function() {
     siteTimer(startTime);
 });
 
-// funtion to start a timer based off the start Date parameter
+// function to start a timer based off the start Date parameter
 function siteTimer(start) {
     setInterval(() => {
         $(".Timer").text(Math.round((new Date - start) / 1000, 0) + " Second(s)");   
         }, 1000);
         console.log("setInterval called");
+}
+
+function toggleDarkMode() {
+    
 }
