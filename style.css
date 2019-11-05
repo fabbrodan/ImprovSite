@@ -83,16 +83,20 @@ ul
     float: left;
 }
 
-.HOchO {
+.HOchO 
+{
     position: absolute;
     top: 57px;
     left: 420px;
-    transition: left 10s;
+    height: 700px;
+    width: 618px;
+    transition: left 4s;
 }
 
-/*.HOchO:hover {
-    left: 500px;
-}*/
+    .HOchO:hover 
+    {
+        left: 450px;
+    }
 
 #footer {
     bottom: 25px;
