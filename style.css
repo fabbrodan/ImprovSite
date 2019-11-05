@@ -43,6 +43,7 @@ ul
     margin: auto;
     background-image: url(Stage2.png);
     background-size: cover;
+    position: relative;
 }
 
 .mainContentNeeds {
@@ -79,11 +80,22 @@ ul
     background: rgba(0, 0, 0, 0.6);
     width: 210px;
     height: 515px;
+    float: left;
 }
+
+.HOchO {
+    position: absolute;
+    top: 57px;
+    left: 420px;
+    transition: left 10s;
+}
+
+/*.HOchO:hover {
+    left: 500px;
+}*/
 
 #footer {
     bottom: 25px;
-    /*position: absolute;*/
     max-width: 1200px;
     margin: auto;
 }
