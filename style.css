@@ -1,6 +1,8 @@
 body {
     font-family: calibri;
     height: 100%;
+    background-color: #2d2d30;
+    color: white;
 }
 
 #mainHeaderDiv {
@@ -16,7 +18,7 @@ body {
 
 #headerMenu li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #headerMenu li :hover {
@@ -27,7 +29,20 @@ body {
     border-style:solid;
     border-width:1px;
     height: 80%;
-    width: auto;
+    max-width: 1200px;
+    height: 675px;
+    margin: auto;
+    background-image: url(Stage2.png);
+    background-size: cover;
+}
+
+.insideMainContent 
+{
+    text-align: justify;
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 230px;
+    height: 515px;
 }
 
 #footer {
