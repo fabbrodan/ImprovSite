@@ -5,12 +5,22 @@ body {
     color: white;
 }
 
+#header
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
 #mainHeaderDiv {
     text-align: center;
     top:25px;
     position: sticky;
 }
 
+ul
+{
+    padding: 0px;
+}
 #headerMenu li {
     display: inline;
     padding-right: 15px;
@@ -28,7 +38,6 @@ body {
 .mainContent {
     border-style:solid;
     border-width:1px;
-    height: 80%;
     max-width: 1200px;
     height: 675px;
     margin: auto;
@@ -41,11 +50,13 @@ body {
     text-align: justify;
     padding: 60px;
     background: rgba(0, 0, 0, 0.6);
-    width: 230px;
+    width: 210px;
     height: 515px;
 }
 
 #footer {
     bottom: 25px;
-    position: absolute;
+    /*position: absolute;*/
+    max-width: 1200px;
+    margin: auto;
 }
