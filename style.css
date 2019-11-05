@@ -31,9 +31,7 @@ ul
     color: white;
 }
 
-#headerMenu li a :hover {
-    font-weight: bolder;
-}
+
 
 .mainContent {
     border-style:solid;
@@ -58,12 +56,12 @@ ul
 
 .titleNeeds 
 {
-    margin-top: 300px;
+    margin-top: 150px;
     margin-left: 100px;
 }
 
 .needs {
-    margin-top: 0px;
+    margin-top: 150px;
     margin-left: 100px;
     text-align: justify;
     padding: 30px;
@@ -71,11 +69,16 @@ ul
     background: rgba(0, 0, 0, 0.6);
     width: 200px;
     height: 100px;
+    transition: all 0.6s;
+}
+
+.needs:hover {
+    transform: scale(1.2);
 }
 
 .insideMainContent 
 {
-    text-align: justify;
+    /*text-align: justify;*/
     padding: 60px;
     background: rgba(0, 0, 0, 0.6);
     width: 210px;
@@ -83,11 +86,14 @@ ul
     float: left;
 }
 
-.HOchO {
+.HOchO 
+{
     position: absolute;
     top: 57px;
     left: 420px;
-    transition: left 10s;
+    height: 700px;
+    width: 618px;
+    transition: left 4s;
 }
 
 .HOchO:hover {
@@ -98,8 +104,32 @@ ul
     font-weight: bolder;
 }
 
+.HOchO:hover 
+{
+    left: 450px;
+}
+
+.mainContentProject {
+    border-style: solid;
+    border-width: 1px;
+    max-width: 1200px;
+    height: 675px;
+    margin: auto;
+    background-image: url(theatre.jpg);
+    background-size: cover;
+}
+
+#startDescription {
+    font-size: 18px;
+}
+
 #footer {
     bottom: 25px;
     max-width: 1200px;
     margin: auto;
+}
+
+.footer-div {
+    display: inline-block;
+    margin-left: 25px;
 }
