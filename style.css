@@ -21,6 +21,7 @@ ul
 {
     padding: 0px;
 }
+
 #headerMenu li {
     display: inline;
     padding-right: 15px;
@@ -30,8 +31,6 @@ ul
     text-decoration: none;
     color: white;
 }
-
-
 
 .mainContent {
     border-style:solid;
@@ -102,11 +101,6 @@ ul
 
 .selected {
     font-weight: bolder;
-}
-
-.HOchO:hover 
-{
-    left: 450px;
 }
 
 .mainContentProject {
