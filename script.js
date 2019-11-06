@@ -1,11 +1,13 @@
 $("document").ready(function() {
-    var startTime = new Date;
-    siteTimer(startTime);
+    if (sessionStorage.getItem("timerStart") == null) {
+        sessionStorage.setItem("timerStart", new Date);
+    }
+    siteTimer();
 });
 
 // function to start a timer based off the start Date parameter
-function siteTimer(start) {
+function siteTimer() {
     setInterval(() => {
-        $(".Timer").text(Math.round((new Date - start) / 1000, 0) + " Second(s)");   
+        $(".Timer").text(Math.round((new Date - Date.parse(sessionStorage.getItem("timerStart"))) / 1000, 0) + " Second(s)");   
         }, 1000);
 }
