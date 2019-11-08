@@ -110,23 +110,23 @@ ul
 }
 
 .HOchO:hover {
-    animation-name: laugh;
-    animation-duration: 1.5s;
+    animation-name: motion;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
-@keyframes laugh{
-    0% {left: 420px;}
-    10% {left: 435px;} 
-    20% {left: 420px;}
-    30% {left: 435px;}
-    40% {left: 420px;}
-    50% {left: 435px;}
-    60% {left: 420px;}
-    70% {left: 435px;}
-    80% {left: 420px;}
-    90% {left: 435px;}
-    100% {left: 420px;}
+@keyframes motion{
+    0% {
+        left: 420px;
+    }
+
+    50% {
+        left: 470px;
+    }
+
+    100% {
+        left: 420px;
+    }
     
 }
 
