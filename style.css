@@ -92,11 +92,27 @@ ul
     left: 420px;
     height: 618px;
     width: 700px;
-    transition: left 4s;
 }
 
 .HOchO:hover {
-    left: 500px;
+    animation-name: laugh;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes laugh{
+    0% {left: 420px;}
+    10% {left: 435px;} 
+    20% {left: 420px;}
+    30% {left: 435px;}
+    40% {left: 420px;}
+    50% {left: 435px;}
+    60% {left: 420px;}
+    70% {left: 435px;}
+    80% {left: 420px;}
+    90% {left: 435px;}
+    100% {left: 420px;}
+    
 }
 
 .selected {
