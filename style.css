@@ -60,10 +60,12 @@ ul
 }
 
 .needs {
+    font-size: 19px;
     margin-top: 150px;
     margin-left: 100px;
-    text-align: justify;
+    /*text-align: justify;*/
     padding: 30px;
+    padding-top: 15px;
     float: left;
     background: rgba(0, 0, 0, 0.6);
     width: 200px;
@@ -89,13 +91,29 @@ ul
     position: absolute;
     top: 57px;
     left: 420px;
-    height: 700px;
-    width: 618px;
-    transition: left 4s;
+    height: 618px;
+    width: 700px;
 }
 
 .HOchO:hover {
-    left: 500px;
+    animation-name: laugh;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes laugh{
+    0% {left: 420px;}
+    10% {left: 435px;} 
+    20% {left: 420px;}
+    30% {left: 435px;}
+    40% {left: 420px;}
+    50% {left: 435px;}
+    60% {left: 420px;}
+    70% {left: 435px;}
+    80% {left: 420px;}
+    90% {left: 435px;}
+    100% {left: 420px;}
+    
 }
 
 .selected {
@@ -114,6 +132,7 @@ ul
 
 #startDescription {
     font-size: 18px;
+    margin-bottom: 2px;
 }
 
 #footer {
