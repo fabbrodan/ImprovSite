@@ -11,6 +11,10 @@ body {
     margin: auto;
 }
 
+#headerImg::after {
+    content: url(Improviseramera_light.png);
+}
+
 #mainHeaderDiv {
     text-align: center;
     top:25px;
@@ -57,6 +61,7 @@ ul
 {
     margin-top: 150px;
     margin-left: 100px;
+    color:white;
 }
 
 .needs {
@@ -83,6 +88,15 @@ ul
     width: 210px;
     height: 515px;
     float: left;
+}
+
+.projectContent {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 150px;
+    width: 800px;
+    height: 50%;
+    background: rgba(226, 220, 220, 0.6);
 }
 
 .HOchO 
