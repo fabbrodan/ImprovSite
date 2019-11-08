@@ -90,8 +90,8 @@ ul
     position: absolute;
     top: 57px;
     left: 420px;
-    height: 700px;
-    width: 618px;
+    height: 618px;
+    width: 700px;
     transition: left 4s;
 }
 
@@ -115,6 +115,7 @@ ul
 
 #startDescription {
     font-size: 18px;
+    margin-bottom: 2px;
 }
 
 #footer {
