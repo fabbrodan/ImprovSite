@@ -1,0 +1,160 @@
+body {
+    font-family: calibri;
+    height: 100%;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#header
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#headerImg::after {
+    content: url(Improviseramera_light.png);
+}
+
+#mainHeaderDiv {
+    text-align: center;
+    top:25px;
+    position: sticky;
+}
+
+ul
+{
+    padding: 0px;
+}
+
+#headerMenu li {
+    display: inline;
+    padding-right: 15px;
+}
+
+#headerMenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.mainContent {
+    border-style:solid;
+    border-width:1px;
+    max-width: 1200px;
+    height: 675px;
+    margin: auto;
+    background-image: url(Stage2.png);
+    background-size: cover;
+    position: relative;
+}
+
+.mainContentNeeds {
+    border-style: solid;
+    border-width: 1px;
+    max-width: 1200px;
+    height: 675px;
+    margin: auto;
+    background-image: url(Stage.png);
+    background-size: cover;
+}
+
+.titleNeeds 
+{
+    margin-top: 150px;
+    margin-left: 100px;
+    color:white;
+}
+
+.needs {
+    font-size: 19px;
+    margin-top: 150px;
+    margin-left: 100px;
+    padding: 30px;
+    padding-top: 15px;
+    float: left;
+    background: rgba(226, 220, 220, 0.6);
+    width: 200px;
+    height: 100px;
+    transition: all 0.6s;
+}
+
+.needs:hover {
+    transform: scale(1.2);
+}
+
+.insideMainContent 
+{
+    padding: 60px;
+    background: rgba(226, 220, 220, 0.6);
+    width: 210px;
+    height: 515px;
+    float: left;
+}
+
+.projectContent {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 150px;
+    width: 800px;
+    height: 50%;
+    background: rgba(226, 220, 220, 0.6);
+}
+
+.HOchO 
+{
+    position: absolute;
+    top: 57px;
+    left: 420px;
+    height: 618px;
+    width: 700px;
+}
+
+.HOchO:hover {
+    animation-name: laugh;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes laugh{
+    0% {left: 420px;}
+    10% {left: 435px;} 
+    20% {left: 420px;}
+    30% {left: 435px;}
+    40% {left: 420px;}
+    50% {left: 435px;}
+    60% {left: 420px;}
+    70% {left: 435px;}
+    80% {left: 420px;}
+    90% {left: 435px;}
+    100% {left: 420px;}
+    
+}
+
+.selected {
+    font-weight: bolder;
+}
+
+.mainContentProject {
+    border-style: solid;
+    border-width: 1px;
+    max-width: 1200px;
+    height: 675px;
+    margin: auto;
+    background-image: url(theatre.jpg);
+    background-size: cover;
+}
+
+#startDescription {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+#footer {
+    bottom: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-div {
+    display: inline-block;
+    margin-left: 25px;
+}
