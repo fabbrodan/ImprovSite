@@ -10,27 +10,16 @@ $("document").ready(function() {
     else {
         if (sessionStorage.getItem("theme") == "dark") {
             $('link').attr("href", "darktheme.css");
-            $('#headerImg').attr("src", "Improviseramera_dark.png");
+            $('#headerImg').attr("src", "Images/Improviseramera_dark.png");
         }
         else if (sessionStorage.getItem("theme") == "light") {
             $('link').attr("href", "lighttheme.css");
-            $('#headerImg').attr("src", "Improviseramera_light.png");
+            $('#headerImg').attr("src", "Images/Improviseramera_light.png");
         }
     }
 
     $("#themeswitcher").click(function() {
-        if (sessionStorage.getItem("theme") == "dark") {
-            sessionStorage.setItem("theme", "light");
-            $('link').attr("href", "lighttheme.css");
-            $("#themeswitcher").attr("value", "Dark Theme");
-            $("#headerImg").attr("src", "Improviseramera_light.png");
-        }
-        else if (sessionStorage.getItem("theme") == "light") {
-            sessionStorage.setItem("theme", "dark");
-            $('link').attr("href", "darktheme.css");
-            $("themeswitcher").attr("value", "Light Theme");
-            $("#headerImg").attr("src", "Improviseramera_dark.png");
-        }
+        switchTheme();
     });
 });
 
@@ -39,4 +28,19 @@ function siteTimer() {
     setInterval(() => {
         $(".Timer").text(Math.round((new Date - Date.parse(sessionStorage.getItem("timerStart"))) / 1000, 0) + " Second(s)");   
         }, 1000);
+}
+
+function switchTheme() {
+    if (sessionStorage.getItem("theme") == "dark") {
+        sessionStorage.setItem("theme", "light");
+        $('link').attr("href", "lighttheme.css");
+        $("#themeswitcher").attr("value", "Dark Theme");
+        $("#headerImg").attr("src", "Images/Improviseramera_light.png");
+    }
+    else if (sessionStorage.getItem("theme") == "light") {
+        sessionStorage.setItem("theme", "dark");
+        $('link').attr("href", "darktheme.css");
+        $("themeswitcher").attr("value", "Light Theme");
+        $("#headerImg").attr("src", "Images/Improviseramera_dark.png");
+    }
 }

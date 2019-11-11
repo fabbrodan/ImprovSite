@@ -1,8 +1,8 @@
 body {
     font-family: calibri;
     height: 100%;
-    background-color: whitesmoke;
-    color: black;
+    background-color: #2d2d30;
+    color: white;
 }
 
 #header
@@ -12,7 +12,7 @@ body {
 }
 
 #headerImg::after {
-    content: url(Improviseramera_light.png);
+    content: url(Images/Improviseramera_dark.png);
 }
 
 #mainHeaderDiv {
@@ -33,7 +33,7 @@ ul
 
 #headerMenu li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .mainContent {
@@ -42,7 +42,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Stage2.png);
+    background-image: url(Images/Stage2.png);
     background-size: cover;
     position: relative;
 }
@@ -53,7 +53,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Stage.png);
+    background-image: url(Images/Stage.png);
     background-size: cover;
 }
 
@@ -61,7 +61,6 @@ ul
 {
     margin-top: 150px;
     margin-left: 100px;
-    color:white;
 }
 
 .needs {
@@ -71,7 +70,7 @@ ul
     padding: 30px;
     padding-top: 15px;
     float: left;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     width: 200px;
     height: 100px;
     transition: all 0.6s;
@@ -84,19 +83,20 @@ ul
 .insideMainContent 
 {
     padding: 60px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     width: 210px;
     height: 555px;
     float: left;
 }
 
 .projectContent {
+
     display: inline-block;
     margin-left: 200px;
     margin-top: 150px;
     width: 800px;
     height: 50%;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .HOchO 
@@ -115,9 +115,18 @@ ul
 }
 
 @keyframes motion{
-    0% {left: 420px;}
-    50% {left: 470px;}
-    100% {left: 420px;}
+    0% {
+        left: 420px;
+    }
+
+    50% {
+        left: 470px;
+    }
+
+    100% {
+        left: 420px;
+    }
+    
 }
 
 .selected {
@@ -130,7 +139,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(theatre.jpg);
+    background-image: url(Images/theatre.jpg);
     background-size: cover;
 }
 
