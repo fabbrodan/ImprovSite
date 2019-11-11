@@ -1,18 +1,14 @@
 body {
     font-family: calibri;
     height: 100%;
-    background-color: whitesmoke;
-    color: black;
+    background-color: #2d2d30;
+    color: white;
 }
 
 #header
 {
     max-width: 1200px;
     margin: auto;
-}
-
-#headerImg::after {
-    content: url(Images/Improviseramera_light.png);
 }
 
 #mainHeaderDiv {
@@ -33,7 +29,7 @@ ul
 
 #headerMenu li a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .mainContent {
@@ -42,7 +38,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Images/Stage2.png);
+    background-image: url(Stage2.png);
     background-size: cover;
     position: relative;
 }
@@ -53,7 +49,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Images/Stage.png);
+    background-image: url(Stage.png);
     background-size: cover;
 }
 
@@ -61,17 +57,17 @@ ul
 {
     margin-top: 150px;
     margin-left: 100px;
-    color:white;
 }
 
 .needs {
     font-size: 19px;
     margin-top: 150px;
     margin-left: 100px;
+    /*text-align: justify;*/
     padding: 30px;
     padding-top: 15px;
     float: left;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     width: 200px;
     height: 100px;
     transition: all 0.6s;
@@ -83,20 +79,12 @@ ul
 
 .insideMainContent 
 {
+    /*text-align: justify;*/
     padding: 60px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     width: 210px;
-    height: 555px;
+    height: 515px;
     float: left;
-}
-
-.projectContent {
-    display: inline-block;
-    margin-left: 200px;
-    margin-top: 150px;
-    width: 800px;
-    height: 50%;
-    background: rgba(255, 255, 255, 0.7);
 }
 
 .HOchO 
@@ -109,15 +97,24 @@ ul
 }
 
 .HOchO:hover {
-    animation-name: motion;
-    animation-duration: 8s;
+    animation-name: laugh;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
-@keyframes motion{
+@keyframes laugh{
     0% {left: 420px;}
-    50% {left: 470px;}
+    10% {left: 435px;} 
+    20% {left: 420px;}
+    30% {left: 435px;}
+    40% {left: 420px;}
+    50% {left: 435px;}
+    60% {left: 420px;}
+    70% {left: 435px;}
+    80% {left: 420px;}
+    90% {left: 435px;}
     100% {left: 420px;}
+    
 }
 
 .selected {
@@ -130,7 +127,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Images/theatre.jpg);
+    background-image: url(theatre.jpg);
     background-size: cover;
 }
 
