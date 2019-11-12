@@ -158,6 +158,10 @@ input{
     padding: 9px 20px;
 }
 
+input:hover {
+    transform: scale(1.1);
+}
+
 p.Timer{
     margin: 0px 15px;
 }
