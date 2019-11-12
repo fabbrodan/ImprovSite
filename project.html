@@ -8,13 +8,13 @@
         <script type="text/javascript" src="Scripts/script.js"></script>
         <title>Your First Project</title>
     </head>
-    <body>
+    <body class="dynamicText dynamicBg">
         <div id="header">
             <div id="mainHeaderDiv">
                 <img id="headerImg" src="Images/Improviseramera_dark.png" alt="header"/>
             </div>
 
-            <div id="headerMenu">
+            <div id="headerMenu" class="dynamicText">
                 <ul>
                     <li><a class="headerLink" href="index.html">Home</a></li>
                     <li><a class="headerLink" href="needs.html">What you need</a></li>
@@ -24,6 +24,7 @@
             </div>
         </div>
         <div class="mainContentProject">
+<<<<<<< HEAD
             <div class="projectContent">
                 <table>
                     <thead>
@@ -59,10 +60,24 @@
                         <td><input type="checkbox"/></td>
                     </tr>
                 </table>
+=======
+            <div class="projectContent dynamicTransBg">
+                <p>
+                    Stegen du behöver ta:
+    ·	Hitta en lokal att genomföra föreställningen i.
+    ·	Sätt ett datum för föreställningen.
+    ·	Välj ut vilka i gruppen som ska improvisera.
+    ·	Välj ut konferencier/konferencierer. En konferencier är personen som presenterar lekarna och hämtar förslag från publiken.
+    ·	Välj ut vilka lekar ni ska genomföra. Välj de som ni tycker är roligast. Glöm inte att skriva ner eventuell rekvisita.
+    ·	Marknadsför föreställningen.
+    ·	Resten beror på vad ni själva vill ha med i föreställningen. Behöver ni mikrofoner? Ljus? Något annat?
+
+                </p>
+>>>>>>> master
             </div>
         </div>
 
-        <div id="footer">
+        <div id="footer", class="dynamicText">
             <hr />
             <div class="footer-div">
                 <p class="Timer"></p>
@@ -70,7 +85,7 @@
             <div class="footer-div">
                 <input id="themeswitcher" type="button" value="" />
             </div>
-            <div class="footer-div" style=" float: right;">Daniel Åslund och Emil Rundberg (<script>document.write(document.lastModified)</script>)</div>
+            <div class="date footer-div" style=" float: right;"></div>
         </div>
     </body>
 </html>

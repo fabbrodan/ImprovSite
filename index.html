@@ -8,13 +8,13 @@
         <script type="text/javascript" src="Scripts/script.js"></script>
         <title>Improv Site</title>
     </head>
-    <body>
+    <body class="dynamicText dynamicBg">
         <div id="header">
             <div id="mainHeaderDiv">
                 <img id="headerImg" src= "Images/Improviseramera_dark.png"  alt="header"/>
             </div>
 
-            <div id="headerMenu">
+            <div id="headerMenu" class="dynamicText">
                 <ul>
                     <li><a class="headerLink selected" href="index.html">Home</a></li>
                     <li><a class="headerLink" href="needs.html">What you need</a></li>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="mainContent">
-            <div class="insideMainContent">
+            <div class="insideMainContent dynamicText dynamicTransBg">
                 <h2>Improvisationsteater är...</h2>
                 <p id="startDescription">... en typ av teaterföreställning där publiken är med och bestämmer vad som händer på scenen. En konferencier presenterar olika ramar för föreställningen och frågar sedan publiken olika frågor. Exempel på frågor är vad skådespelarna ska göra, vilka dem är, och vad de känner för varandra. Improvisatörernas jobb är att på plats spela upp en scen baserat på publikens förslag.</p>
             </div>
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div id="footer">
+        <div id="footer", class="dynamicText">
             <hr/>
             <div class="footer-div">
                 <p class="Timer"></p>
@@ -41,7 +41,7 @@
             <div class="footer-div">
                 <input id="themeswitcher" type="button" value=""/>
             </div>
-            <div class="footer-div" style=" float: right;">Daniel Åslund och Emil Rundberg (<script>document.write(document.lastModified)</script>)</div>
+            <div class = "date footer-div" style= "float: right;"></div>
         </div>
     </body>
 </html>
