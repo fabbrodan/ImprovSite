@@ -6,6 +6,7 @@ $("document").ready(function() {
 
     if (sessionStorage.getItem("theme") == null) {
         sessionStorage.setItem("theme", "dark");
+        $("#themeswitcher").attr("value", "Light Theme");
     }
     else {
         if (sessionStorage.getItem("theme") == "dark") {
@@ -56,6 +57,6 @@ function LastUpdated() {
     var date = new Date(document.lastModified).toDateString();
     var el = document.getElementsByClassName("date");
 
-    // Atm I don't know how to make javascript show "Å" so I did it like this. 
+    // Atm I don't know how to make javascript show "ï¿½" so I did it like this. 
     el[0].textContent = "Daniel \u00C5slund & Emil Rundberg" + " " + "(" + date + ")";
 }
