@@ -93,6 +93,14 @@ ul
     height: 50%;
 }
 
+.projectContent table {
+    margin: auto;
+    margin-top: 10%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 25px 0px;
+}
+
 .HOchO 
 {
     position: absolute;

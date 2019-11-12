@@ -36,7 +36,7 @@ $("document").ready(function() {
     });
 
     // set checked attribute on checkboxes depending on local storage
-    var checkBoxes = document.getElementsByClassName("projectChkBox")
+    var checkBoxes = document.getElementsByClassName("projectChkBox");
     Array.from(checkBoxes).forEach((element) => {
         if (localStorage.getItem(element.getAttribute("id")) != null) {
             element.setAttribute("checked", "true");
