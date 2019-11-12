@@ -10,7 +10,7 @@ body {
 }
 
 #headerImg::after {
-    content: url(Improviseramera_dark.png);
+    content: url(../Images/Improviseramera_dark.png);
 }
 
 #mainHeaderDiv {
@@ -34,12 +34,12 @@ ul
 }
 
 .mainContent {
-    border-style:solid;
-    border-width:1px;
+    border-style: solid;
+    border-width: 1px;
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Stage2.png);
+    background-image: url(../Images/Stage2.png);
     background-size: cover;
     position: relative;
 }
@@ -50,7 +50,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(Stage.png);
+    background-image: url(../Images/Stage.png);
     background-size: cover;
 }
 
@@ -134,7 +134,7 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(theatre.jpg);
+    background-image: url(../Images/theatre.jpg);
     background-size: cover;
 }
 
