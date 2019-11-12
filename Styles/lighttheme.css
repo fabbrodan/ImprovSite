@@ -11,3 +11,8 @@
 .dynamicTransBg {
     background-color: rgba(255, 255, 255, 0.7);
 }
+
+input {
+    background-color: #2d2d30;
+    color: white;
+}
