@@ -11,3 +11,8 @@
 .dynamicTransBg {
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+input {
+    background-color: whitesmoke;
+    color: black;
+}
