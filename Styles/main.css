@@ -99,6 +99,7 @@ ul
     text-align: left;
     border-collapse: separate;
     border-spacing: 25px 0px;
+    font-size: 20px;
 }
 
 .HOchO 
@@ -158,10 +159,11 @@ ul
 }
 
 .footer-div {
+    margin-top: 20px;
     display: inline-block;
 }
 
-input{
+input {
     border-radius: 14px;
     padding: 9px 20px;
 }
