@@ -102,6 +102,10 @@ ul
     font-size: 20px;
 }
 
+.projectChkBox {
+    transform: scale(1.5);
+}
+
 .HOchO 
 {
     position: absolute;
@@ -135,6 +139,7 @@ ul
 
 .selected {
     font-weight: bolder;
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 }
 
 .mainContentProject {
