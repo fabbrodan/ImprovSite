@@ -8,17 +8,17 @@ $("document").ready(function() {
     // set the theme according to session storage
     if (sessionStorage.getItem("theme") == null) {
         sessionStorage.setItem("theme", "dark");
-        $("#themeswitcher").attr("value", "Light Theme");
+        $("#themeswitcher").attr("value", "Ljust Tema");
     }
     else {
         if (sessionStorage.getItem("theme") == "dark") {
             $('link').attr("href", "Styles/darktheme.css");
-            $("#themeswitcher").attr("value", "Light Theme");
+            $("#themeswitcher").attr("value", "Ljust Tema");
             $('#headerImg').attr("src", "Images/Improviseramera_dark.png");
         }
         else if (sessionStorage.getItem("theme") == "light") {
             $('link').attr("href", "Styles/lighttheme.css");
-            $("#themeswitcher").attr("value", "Dark Theme");
+            $("#themeswitcher").attr("value", "Mörkt Tema");
             $('#headerImg').attr("src", "Images/Improviseramera_light.png");
         }
     }
@@ -47,7 +47,7 @@ $("document").ready(function() {
 // function to start a timer based off the start Date parameter
 function siteTimer() {
     setInterval(() => {
-        $(".Timer").text(Math.round((new Date - Date.parse(sessionStorage.getItem("timerStart"))) / 1000, 0) + " Second(s)");   
+        $(".Timer").text(Math.round((new Date - Date.parse(sessionStorage.getItem("timerStart"))) / 1000, 0) + " Sekunder");   
         }, 1000);
 }
 
@@ -56,13 +56,13 @@ function switchTheme() {
     if (sessionStorage.getItem("theme") == "dark") {
         sessionStorage.setItem("theme", "light");
         $('link').attr("href", "Styles/lighttheme.css");
-        $("#themeswitcher").attr("value", "Dark Theme");
+        $("#themeswitcher").attr("value", "Mörkt Tema");
         $("#headerImg").attr("src", "Images/Improviseramera_light.png");
     }
     else if (sessionStorage.getItem("theme") == "light") {
         sessionStorage.setItem("theme", "dark");
         $('link').attr("href", "Styles/darktheme.css");
-        $("#themeswitcher").attr("value", "Light Theme");
+        $("#themeswitcher").attr("value", "Ljust Tema");
         $("#headerImg").attr("src", "Images/Improviseramera_dark.png");
     }
 }
