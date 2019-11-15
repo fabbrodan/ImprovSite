@@ -40,19 +40,9 @@ ul
     max-width: 1200px;
     height: 675px;
     margin: auto;
-    background-image: url(../Images/Stage2.png);
     background-size: cover;
     position: relative;
-}
-
-.mainContentNeeds {
-    border-style: solid;
-    border-width: 1px;
-    max-width: 1200px;
-    height: 675px;
-    margin: auto;
-    background-image: url(../Images/Stage.png);
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titleNeeds 
@@ -148,15 +138,7 @@ ul
     font-weight: bolder;
 }
 
-.mainContentProject {
-    border-style: solid;
-    border-width: 1px;
-    max-width: 1200px;
-    height: 675px;
-    margin: auto;
-    background-image: url(../Images/theatre.jpg);
-    background-size: cover;
-}
+
 
 #startDescription {
     font-size: 18px;
@@ -189,15 +171,7 @@ p.Timer{
     margin: 0px 15px;
 }
 
-#mainContentTipsTricks {
-    border-style: solid;
-    border-width: 1px;
-    max-width: 1200px;
-    height: 675px;
-    margin: auto;
-    background-image: url(../Images/Olof.png);
-    background-size: cover;
-}
+
 
 .tipBox {
     width: 250px;
