@@ -5,7 +5,7 @@
 }
 
 .dynamicBg {
-    background-color: whitesmoke;
+    background-color: rgb(235, 235, 235);
 }
 
 .dynamicTransBg {
@@ -19,4 +19,8 @@ input {
 
 input:hover {
     box-shadow: 0 0 2px 2px black;
+}
+
+.selected {
+    text-shadow: -1px 0 darkgray, 0 1px darkgray, 1px 0 darkgray, 0 -1px darkgray;
 }
