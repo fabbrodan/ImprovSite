@@ -3,6 +3,10 @@ body {
     height: 100%;
 }
 
+div{
+    border-radius: 15px;
+}
+
 /*Allt om Headern*/
 #header
 {
@@ -56,6 +60,8 @@ ul
     float: left;
     font-size: 18px;
     text-align: left;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .skrattBild {
