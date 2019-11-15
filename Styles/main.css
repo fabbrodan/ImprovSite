@@ -86,12 +86,18 @@ ul
 }
 
 .projectContent {
-
     display: inline-block;
     margin-left: 200px;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     width: 800px;
     height: 50%;
+}
+
+#projectHeader {
+    text-align: center;
+    width: 1000px;
+    margin-left: 100px;
+    margin-top: 100px;;
 }
 
 .projectContent table {
@@ -161,11 +167,13 @@ ul
     bottom: 25px;
     max-width: 1200px;
     margin: auto;
+    vertical-align: text-bottom;
 }
 
 .footer-div {
     margin-top: 20px;
     display: inline-block;
+    vertical-align: text-bottom;
 }
 
 input {
@@ -179,4 +187,14 @@ input:hover {
 
 p.Timer{
     margin: 0px 15px;
+}
+
+#mainContentTipsTricks {
+    border-style: solid;
+    border-width: 1px;
+    max-width: 1200px;
+    height: 675px;
+    margin: auto;
+    background-image: url(../Images/Olof.png);
+    background-size: cover;
 }
