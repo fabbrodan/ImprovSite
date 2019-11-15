@@ -3,6 +3,7 @@ body {
     height: 100%;
 }
 
+/*Allt om Headern*/
 #header
 {
     max-width: 1200px;
@@ -34,6 +35,7 @@ ul
     font-size: larger;
 }
 
+/*Allt om huvudinehållet*/
 .mainContent {
     border-style: solid;
     border-width: 1px;
@@ -43,68 +45,20 @@ ul
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
+    text-align:center;
 }
 
-.titleNeeds 
-{
-    margin-top: 150px;
-    margin-left: 100px;
-}
-
-.needs {
-    font-size: 19px;
-    margin-top: 150px;
-    margin-left: 100px;
-    padding: 30px;
-    padding-top: 15px;
-    float: left;
-    width: 200px;
-    height: 100px;
-    transition: all 0.6s;
-}
-
-.needs:hover {
-    transform: scale(1.2);
-}
-
-.insideMainContent 
-{
+/*Allt om startsidan*/
+.insideMainContent {
     padding: 60px;
     width: 210px;
     height: 555px;
     float: left;
-}
-
-.projectContent {
-    display: inline-block;
-    margin-left: 200px;
-    /*margin-top: 150px;*/
-    width: 800px;
-    height: 50%;
-}
-
-#projectHeader {
-    text-align: center;
-    width: 1000px;
-    margin-left: 100px;
-    margin-top: 100px;;
-}
-
-.projectContent table {
-    margin: auto;
-    margin-top: 10%;
+    font-size: 18px;
     text-align: left;
-    border-collapse: separate;
-    border-spacing: 25px 0px;
-    font-size: 20px;
 }
 
-.projectChkBox {
-    transform: scale(1.5);
-}
-
-.HOchO 
-{
+.skrattBild {
     position: absolute;
     top: 57px;
     left: 420px;
@@ -112,13 +66,13 @@ ul
     width: 700px;
 }
 
-.HOchO:hover {
-    animation-name: motion;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
+    .skrattBild:hover {
+        animation-name: motion;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
 
-@keyframes motion{
+@keyframes motion {
     0% {
         left: 420px;
     }
@@ -131,31 +85,57 @@ ul
     100% {
         left: 420px;
     }
-    
+}
+
+/*Allt om sidan: "Kom igång"*/
+.titleNeeds, .needs {
+    margin-top: 150px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.needs {
+    font-size: 19px;
+    padding: 30px;
+    padding-top: 15px;
+    float: left;
+    width: 200px;
+    height: 100px;
+    transition: all 0.6s;
+}
+
+.needs:hover {
+    transform: scale(1.2);
+}
+
+
+/*Allt om "Sätt upp föreställning"*/
+#projectHeader, .projectContent {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    display: inline-block;
+    margin-top: 80px;
+    vertical-align: central;
+}
+
+
+.projectContent table {
+    margin: 5% auto;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 25px 0px;
+    font-size: 20px;
+    vertical-align: central;
+}
+
+/*Allt om checkBoxarna*/
+.projectChkBox {
+    transform: scale(1.5);
 }
 
 .selected {
     font-weight: bolder;
-}
-
-
-
-#startDescription {
-    font-size: 18px;
-    margin-bottom: 2px;
-}
-
-#footer {
-    bottom: 25px;
-    max-width: 1200px;
-    margin: auto;
-    vertical-align: text-bottom;
-}
-
-.footer-div {
-    margin-top: 20px;
-    display: inline-block;
-    vertical-align: text-bottom;
 }
 
 input {
@@ -163,16 +143,11 @@ input {
     padding: 9px 20px;
 }
 
-input:hover {
-    transform: scale(1.1);
-}
+    input:hover {
+        transform: scale(1.1);
+    }
 
-p.Timer{
-    margin: 0px 15px;
-}
-
-
-
+/*Allt om "Övriga tips"*/
 .tipBox {
     width: 250px;
     height: auto;
@@ -180,9 +155,9 @@ p.Timer{
     transition: all 0.6s;
 }
 
-.tipBox:hover {
-    transform: scale(1.2);
-}
+    .tipBox:hover {
+        transform: scale(1.2);
+    }
 
 #tip1 {
     margin-top: 50px;
@@ -203,3 +178,24 @@ p.Timer{
     margin-left: 100px;
     margin-top: -50px;
 }
+
+/*Allt om footern*/
+#footer {
+    bottom: 25px;
+    max-width: 1200px;
+    margin: auto;
+    vertical-align: text-bottom;
+}
+
+.footer-div {
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+p.Timer{
+    margin: 0px 15px;
+}
+
+
+
