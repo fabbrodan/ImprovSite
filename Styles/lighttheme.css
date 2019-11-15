@@ -24,3 +24,17 @@ input:hover {
 .selected {
     text-shadow: -1px 0 darkgray, 0 1px darkgray, 1px 0 darkgray, 0 -1px darkgray;
 }
+
+a {
+    text-decoration: underline;
+    color: black;
+    text-decoration-color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
