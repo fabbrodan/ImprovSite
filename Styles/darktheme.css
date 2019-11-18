@@ -12,12 +12,12 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-input {
+#themeswitcher {
     background-color: whitesmoke;
     color: black;
 }
 
-input:hover {
+#themeswitcher:hover {
     box-shadow: 0 0 2px 2px white;
 }
 
@@ -25,16 +25,17 @@ input:hover {
     text-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
 }
 
-a {
+.tipBox a {
     text-decoration: underline;
     color: white;
     text-decoration-color: white;
 }
 
-a:visited {
+.tipBox a:visited {
     color: white;
 }
 
-a:hover {
+.tipBox a:hover {
     color: blue;
+    text-decoration-color: blue;
 }
