@@ -3,7 +3,7 @@ body {
     height: 100%;
 }
 
-div{
+div {
     border-radius: 15px;
 }
 
@@ -12,10 +12,6 @@ div{
 {
     max-width: 1200px;
     margin: auto;
-}
-
-#headerImg::after {
-    content: url(../Images/Improviseramera_dark.png);
 }
 
 #mainHeaderDiv {
@@ -39,7 +35,7 @@ ul
     font-size: larger;
 }
 
-/*Allt om huvudinehållet*/
+/*Allt om huvudinehÃ¥llet*/
 .mainContent {
     border-style: solid;
     border-width: 1px;
@@ -93,7 +89,7 @@ ul
     }
 }
 
-/*Allt om sidan: "Kom igång"*/
+/*Allt om sidan: "Kom igÃ¥ng"*/
 .titleNeeds, .needs {
     margin-top: 150px;
     margin-left: 100px;
@@ -115,7 +111,7 @@ ul
 }
 
 
-/*Allt om "Sätt upp föreställning"*/
+/*Allt om "SÃ¤tt upp fÃ¶restÃ¤llning"*/
 #projectHeader, .projectContent {
     text-align: center;
     width: 800px;
@@ -140,24 +136,27 @@ ul
     transform: scale(1.5);
 }
 
+/* Header meny */
 .selected {
     font-weight: bolder;
 }
 
-input {
+/* Footer knapp */
+#themeswitcher {
     border-radius: 14px;
     padding: 9px 20px;
 }
 
-    input:hover {
+    #themeswitcher:hover {
         transform: scale(1.1);
     }
 
-/*Allt om "Övriga tips"*/
+/*Allt om "Ã–vriga tips"*/
 .tipBox {
     width: 250px;
     height: auto;
     font-size: 18px;
+    text-align: left;
     transition: all 0.6s;
 }
 
