@@ -71,7 +71,7 @@ function switchTheme() {
 // as a DateString. Then find the element with the correct class and have that
 // show the string.
 function LastUpdated() {
-    var date = new Date(document.lastModified).toTimeString();
+    var date = new Date(document.lastModified).toDateString();
     var el = document.getElementsByClassName("date");
 
     // Atm I don't know how to make javascript show "�" so I did it like this. 
