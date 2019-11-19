@@ -23,6 +23,16 @@
                 </ul>
             </div>
         </div>
+
+        <!--We decided to add background images here instead of in .css
+        because if we did the latter, we would have to create one css-selector 
+        for each div. The former solution allows us to use the same selector 
+        on every page and just change the background here.
+        
+        Also notice that we set classes for dynamic background and text. 
+        These are the properties that change on changes from/to dark mode.-->
+        
+
         <div class="mainContent" style="background-image: url(Images/Stage2.png);">
             <div class="insideMainContent dynamicText dynamicTransBg">
                 <h2>Improvisationsteater är...</h2>
@@ -31,6 +41,7 @@
             <div class="skrattBild">
                 <img src="Images/Hannah&Olof.png" />
             </div>
+
         </div>
 
         <div id="footer" class="dynamicText">

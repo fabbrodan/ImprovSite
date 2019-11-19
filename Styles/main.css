@@ -43,8 +43,14 @@ ul
     height: 675px;
     margin: auto;
     background-size: cover;
+
+    /*  This needed to be relative because if not the image inside that
+        needs to be absolute, will not align the way I want.*/
     position: relative;
     background-repeat: no-repeat;
+
+    /*  On some pages we use divs as inline-blocks and they align
+        in the middle with this setting.*/
     text-align:center;
 }
 
@@ -56,6 +62,11 @@ ul
     float: left;
     font-size: 18px;
     text-align: left;
+
+    /*  I wanted only the top and bottom left corners to round along
+        with the edge of the containing div. But not the other corners. 
+        All divs are set to have rounded corners and therefor I only
+        Had to set two corners to 0.*/
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
 }
@@ -68,12 +79,14 @@ ul
     width: 700px;
 }
 
+    /*On hover start the animation named motion. And continue as long as they hover*/
     .skrattBild:hover {
         animation-name: motion;
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 
+/*Here are the rules for the animation above*/
 @keyframes motion {
     0% {
         left: 420px;

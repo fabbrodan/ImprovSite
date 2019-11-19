@@ -1,3 +1,6 @@
+/*Importing the main.css so that all the settings from that follow. 
+    That way we don't have to call two .css files in the .html files.
+*/
 @import url("main.css");
 
 .dynamicText, .dynamicText li a {

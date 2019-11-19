@@ -67,11 +67,11 @@ function switchTheme() {
     }
 }
 
-// Get data about when the document was last modified as a date. Then show it
+// Get data about the last modification about of the document. Then convert it
 // as a DateString. Then find the element with the correct class and have that
-// show the string. 
+// show the string.
 function LastUpdated() {
-    var date = new Date(document.lastModified).toDateString();
+    var date = new Date(document.lastModified).toTimeString();
     var el = document.getElementsByClassName("date");
 
     // Atm I don't know how to make javascript show "�" so I did it like this. 
