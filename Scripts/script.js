@@ -40,6 +40,8 @@ $("document").ready(function() {
     Array.from(checkBoxes).forEach((element) => {
         if (localStorage.getItem(element.getAttribute("id")) != null) {
             element.setAttribute("checked", "true");
+            var rowId = element.getAttribute("id").replace("Check", "Row");
+            $("#" + rowId).css("text-decoration", "line-through");
         }
     });
 });
@@ -80,10 +82,14 @@ function LastUpdated() {
 
 // set and remove the local storage values for the checked boxes to be remembered across sessions
 function setChecked(chkBox) {
+    var rowId = chkBox.attr("id").replace("Check", "Row");
+
     if (localStorage.getItem(chkBox.attr("id")) == null) {
         localStorage.setItem(chkBox.attr("id"), "true");
+        $("#"+rowId).css("text-decoration", "line-through");
     }
     else {
         localStorage.removeItem(chkBox.attr("id"));
+        $("#"+rowId).css("text-decoration", "");
     }
 }
