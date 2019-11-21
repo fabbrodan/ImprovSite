@@ -35,6 +35,14 @@ div {
     top:25px;
 }
 
+/*The width makes it shrink proportionally when the size of the window shrinks
+The max-width makes sure that the image does not become bigger than it's original
+size. If it does it becomes blurry*/
+#headerImg{
+    width: 100%;
+    max-width: 878px;
+}
+
 ul
 {
     padding: 0px;
@@ -210,7 +218,7 @@ ul
 }
 
 .footer-div {
-    margin-top: 20px;
+    margin-top: 0px;
     display: inline-block;
     vertical-align: text-bottom;
 }
@@ -218,6 +226,10 @@ ul
 p.Timer{
     margin: 0px 15px;
 }
+
+/*Here we make the site responsive. We desided to change the behavior
+of the site at 1120px because that's the point at which the 
+original design starts to break. */
 
 @media only screen and (max-width: 1120px){
     
@@ -261,12 +273,26 @@ p.Timer{
         margin: 0px;
         padding: 20px 50px;
         padding-top: 10px;
-        border-radius: unset;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .skrattBild {
         display: none;
     }
 
+    #footer{
+        text-align: center;
+    }
+
+    p, #themeswitcher{
+        margin: 5px !important;
+    }
+
+    .footer-div{
+        display: block;
+        margin: auto;
+        float: unset !important;
+    }
    
 }
