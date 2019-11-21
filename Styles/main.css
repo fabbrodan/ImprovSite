@@ -33,12 +33,16 @@ div {
 #mainHeaderDiv {
     text-align: center;
     top:25px;
-    position: sticky;
 }
 
 ul
 {
     padding: 0px;
+}
+
+.headerMenu{
+
+    text-align: center;
 }
 
 #headerMenu li {
@@ -213,4 +217,56 @@ ul
 
 p.Timer{
     margin: 0px 15px;
+}
+
+@media only screen and (max-width: 1120px){
+    
+    /*Allt om huvudinehållet*/
+    .mainContent {
+
+        height: auto;
+        margin: auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-repeat: no-repeat;
+        text-align:center;
+    }
+
+    /*Allt om headern*/
+    #header{
+        text-align: center;
+    }
+    #headerMenu li{
+        display: inline-block;
+        /* padding-bottom: 10px; */
+    }
+
+
+    /*Allt om "Kom igång"*/
+    .titleNeeds~.bubble, #tip1, #tip2, #tip3, #tip4 {
+        margin: 20px 50px;
+        position: unset;
+    }
+
+    .titleNeeds{
+        margin: 5px 40px;
+        text-align: center;
+    }
+
+    /*Allt om startsidan*/
+    .insideMainContent {
+        width: auto;
+        height: auto;
+        float: unset;
+        margin: 0px;
+        padding: 20px 50px;
+        padding-top: 10px;
+        border-radius: unset;
+    }
+
+    .skrattBild {
+        display: none;
+    }
+
+   
 }
