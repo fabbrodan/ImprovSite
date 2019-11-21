@@ -177,6 +177,7 @@ ul
 #themeswitcher {
     border-radius: 14px;
     padding: 9px 20px;
+    margin-top: 10px;
 }
 
     #themeswitcher:hover {
@@ -220,14 +221,18 @@ ul
 .footer-div {
     margin-top: 0px;
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: text-top;
+}
+
+p{
+    margin: 9px;
 }
 
 p.Timer{
-    margin: 0px 15px;
+    margin-left: 15px;
 }
 
-/*Here we make the site responsive. We desided to change the behavior
+/*Here we make the site responsive. We decided to change the behavior
 of the site at 1120px because that's the point at which the 
 original design starts to break. */
 
@@ -285,8 +290,12 @@ original design starts to break. */
         text-align: center;
     }
 
-    p, #themeswitcher{
-        margin: 5px !important;
+    p{
+        margin: 5px;
+    }
+
+    #themeswitcher {
+        margin: 10px !important;
     }
 
     .footer-div{
