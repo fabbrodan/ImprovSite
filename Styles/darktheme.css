@@ -39,3 +39,7 @@
     color: blue;
     text-decoration-color: blue;
 }
+
+.underLineTableCell {
+    border-bottom: solid 1px white;
+}
