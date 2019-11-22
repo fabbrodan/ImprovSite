@@ -148,7 +148,8 @@ ul
     text-align: center;
     width: 800px;
     margin: auto;
-    display: inline-block;
+    padding: 10px;
+    /*display: inline-block;*/
     margin-top: 80px;
     vertical-align: central;
 }
@@ -258,6 +259,11 @@ original design starts to break. */
         /* padding-bottom: 10px; */
     }
 
+    #projectHeader, .projectContent {
+        height: auto;
+        width: 90%;
+        margin-top: 5px;
+    }
 
     /*Allt om "Kom igång"*/
     .titleNeeds~.bubble, #tip1, #tip2, #tip3, #tip4 {
@@ -304,4 +310,16 @@ original design starts to break. */
         float: unset !important;
     }
    
+}
+
+@media screen and (max-width: 400px) {
+
+    .titleNeeds~.bubble, #tip1, #tip2, #tip3, #tip4 {
+        margin: 20px 1px;
+        position: unset;
+    }
+
+    .bubble:hover {
+        transform: scale(1.05);
+    }
 }
