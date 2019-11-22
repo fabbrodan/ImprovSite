@@ -35,7 +35,7 @@ $("document").ready(function() {
         setChecked($(this));
     });
 
-    // set checked attribute on checkboxes depending on local storage
+    // set checked attribute on checkboxes and line-through on corresponding text-elements depending on local storage
     var checkBoxes = document.getElementsByClassName("projectChkBox");
     Array.from(checkBoxes).forEach((element) => {
         if (localStorage.getItem(element.getAttribute("id")) != null) {
@@ -80,7 +80,7 @@ function LastUpdated() {
     el[0].textContent = "Daniel \u00C5slund & Emil Rundberg" + " " + "(" + date + ")";
 }
 
-// set and remove the local storage values for the checked boxes to be remembered across sessions
+// set and remove the local storage values for the checked boxes and line-through to be remembered across sessions
 function setChecked(chkBox) {
     var rowId = chkBox.attr("id").replace("Check", "Row");
 

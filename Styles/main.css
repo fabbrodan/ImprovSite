@@ -263,6 +263,7 @@ original design starts to break. */
         /* padding-bottom: 10px; */
     }
 
+    /* projekt sidan för responsivitet */
     #projectHeader, .projectContent {
         height: auto;
         width: 90%;
@@ -316,6 +317,9 @@ original design starts to break. */
    
 }
 
+/*  Detta hanterar när  webbläsarens bredd är nästan minimum
+    för att hantera hur alla element av klassen bubble beter sig
+    för att undvika att det skapar en overflow-x */
 @media screen and (max-width: 400px) {
 
     .titleNeeds~.bubble, #tip1, #tip2, #tip3, #tip4 {
