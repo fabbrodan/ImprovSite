@@ -291,7 +291,7 @@ original design starts to break. */
 
         /*Försökte få diven att vara i mitten, men det jag brukar
           använda fungerade inte. Detta blev den näst bästa lösningen.*/
-        margin-top: 7%;
+        margin-top: 8%;
 
         padding: 20px 50px;
         padding-top: 10px;
@@ -335,5 +335,9 @@ original design starts to break. */
 
     .bubble:hover {
         transform: scale(1.05);
+    }
+
+    .insideMainContent {
+        margin-top: 0% !important;
     }
 }
