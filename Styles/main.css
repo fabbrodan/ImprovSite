@@ -245,13 +245,14 @@ original design starts to break. */
     
     /*Allt om huvudinehållet*/
     .mainContent {
-
         height: auto;
+        min-height: 450px;
         margin: auto;
         padding-bottom: 50px;
         padding-top: 50px;
+        position: static;
         background-repeat: no-repeat;
-        text-align:center;
+        text-align: center;
     }
 
     /*Allt om headern*/
@@ -287,6 +288,11 @@ original design starts to break. */
         height: auto;
         float: unset;
         margin: 0px;
+
+        /*Försökte få diven att vara i mitten, men det jag brukar
+          använda fungerade inte. Detta blev den näst bästa lösningen.*/
+        margin-top: 7%;
+
         padding: 20px 50px;
         padding-top: 10px;
         border-bottom-right-radius: 20px;
