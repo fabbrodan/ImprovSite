@@ -288,21 +288,30 @@ original design starts to break. */
         height: auto;
         float: unset;
         margin: 0px;
-
-        /*Försökte få diven att vara i mitten, men det jag brukar
-          använda fungerade inte. Detta blev den näst bästa lösningen.*/
-        margin-top: 8%;
-
+        margin-top: -20px;
+        line-height: normal;
         padding: 20px 50px;
         padding-top: 10px;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
+        display:inline-block;
+        vertical-align: middle;
+    }
+
+    /*In order to position the ".insideMainContent"-div in the middle
+        using vertical-align. The line-height of the parent-div (.mainContent) 
+        needs to be close to the height of the same div. We only wanted 
+        that to happen on one of the .mainContent-divs hence the need for 
+        a separate class.*/
+    .flexibleLineHeight{
+        line-height: 450px;
     }
 
     .skrattBild {
         display: none;
     }
 
+    /*Allt om footern*/
     #footer{
         text-align: center;
     }
@@ -335,9 +344,5 @@ original design starts to break. */
 
     .bubble:hover {
         transform: scale(1.05);
-    }
-
-    .insideMainContent {
-        margin-top: 0% !important;
     }
 }
